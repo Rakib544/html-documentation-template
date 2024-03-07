@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-[#0F172A] text-[#94A3B8] text-sm">
+    <div class="flex justify-end lg:hidden px-4 mt-8">
+      <button id="open-btn">
+        <svg
+          class="h-8 w-8"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="#fff"
+        >
+          <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- mobile nav start here -->
+    <div id="modal" class="hidden h-screen w-full top-0 bg-[#0F172A] tex-white">
+      <div class="flex justify-end px-4 mt-8">
+        <button id="close-btn">
+          <svg
+            class="h-8 w-8"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="#fff"
+          >
+            <path
+              d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <ul
+        role="list"
+        class="mt-2 ml-5 space-y-2 border-l-2 border-slate-100 lg:mt-4 lg:space-y-4 lg:border-slate-200 dark:border-slate-800"
+        id="mobile-link-container"
+      >
+        <li class="relative">
+          <a class="mobile-link-btn" href="#getting-started">Getting started</a>
+        </li>
+        <li class="relative">
+          <a class="mobile-link-btn" href="#instalation">Installation</a>
+        </li>
+        <li class="relative">
+          <a class="mobile-link-btn" href="#folder-structure"
+            >Folder Structure</a
+          >
+        </li>
+        <li class="relative">
+          <a class="mobile-link-btn" href="#customization">Customization</a>
+        </li>
+        <li class="relative">
+          <a class="mobile-link-btn" href="#license-and-credits"
+            >License and Credits</a
+          >
+        </li>
+        <li class="relative">
+          <a class="mobile-link-btn" href="#conclution">Conclusion</a>
+        </li>
+      </ul>
+    </div>
+    <!-- main content start here -->
+    <div class="flex min-h-screen flex-col rounded-md lg:flex-row">
+      <div
+        class="fixed bottom-0 left-0 top-0 hidden max-h-screen w-1/5 overflow-y-auto px-3 lg:block pt-10 border-r border-slate-800"
+      >
+        <ul
+          role="list"
+          class="mt-2 ml-5 space-y-2 border-l-2 border-slate-100 lg:mt-4 lg:space-y-4 lg:border-slate-200 dark:border-slate-800"
+          id="link-container"
+        >
+          <li class="relative">
+            <a class="link-btn" href="#getting-started">Getting started</a>
+          </li>
+          <li class="relative">
+            <a class="link-btn" href="#instalation">Installation</a>
+          </li>
+          <li class="relative">
+            <a class="link-btn" href="#folder-structure">Folder Structure</a>
+          </li>
+          <li class="relative">
+            <a class="link-btn" href="#customization">Customization</a>
+          </li>
+          <li class="relative">
+            <a class="link-btn" href="#license-and-credits"
+              >License and Credits</a
+            >
+          </li>
+          <li class="relative">
+            <a class="link-btn" href="#conclution">Conclusion</a>
+          </li>
+        </ul>
+      </div>
+      <div class="ml-auto w-full lg:w-4/5 py-14 text-base">
+        <!-- Main content start here -->
+        <div class="px-4 pb-10 lg:px-8">
+          <!-- introduction section start here -->
+          <section id="getting-started">
+            <p class="text-xs font-bold text-sky-500 mb-2">Introduction</p>
+            <h2 class="font-bold text-xl text-white">Getting Started</h2>
+            <p class="mt-5">
+              Welcome to
+              <span class="font-semibold text-sky-500">“Template Name”</span>
+              Documentation by
+              <span class="font-semibold text-sky-500">“Template Author”</span>
+              v1.0
+            </p>
+            <p class="mt-4 leading-6">
+              Thank you for purchasing my template. If you have any questions
+              that are beyond the scope of this help file, please feel free to
+              email via my user page contact form
+              <a href="mailto:md.rakib10122003@gmail.com" class="text-sky-500"
+                >here</a
+              >. Thanks so much!
+            </p>
+          </section>
+          <!-- Instalation step start here -->
+          <section id="instalation" class="mt-20">
+            <p class="text-xs font-bold text-sky-500 mb-2">Installation</p>
+            <h2 class="font-bold text-xl text-white">Installation Steps</h2>
+
+            <p class="font-bold text-white mt-6 mb-2">Prerequisites:</p>
+            <ul class="list-disc list-inside space-y-2">
+              <li class="ml-4 leading-6">
+                Ensure you have Node.js and npm installed on your system. You
+                can download and install them from
+                <a
+                  class="text-sky-500 font-semibold"
+                  href="https://nodejs.org"
+                  target="_blank"
+                  >nodejs.org</a
+                >.
+              </li>
+              <li class="ml-4 leading-6">
+                Verify the installation by running the following commands in
+                your terminal or command prompt:
+                <pre
+                  class="bg-[#182234] border border-slate-800 rounded-xl mt-4"
+                >
+                <code class="!whitespace-pre"> 
+  node -v 
+  npm -v</code>
+              </pre>
+              </li>
+            </ul>
+
+            <p class="font-bold text-white mt-6 mb-2">
+              Navigate to Project Directory:
+            </p>
+            <ul class="list-disc list-inside space-y-2">
+              <li class="ml-4 leading-6">
+                If you downloaded the ZIP file, navigate to the extracted folder
+                in your terminal or command prompt.
+              </li>
+              <li class="ml-4 leading-6">
+                After navigate to the extracted folder, you have to navigate to
+                the <span class="font-bold italic">template folder</span>
+              </li>
+            </ul>
+
+            <p class="font-bold text-white mt-6 mb-2">Install Dependency:</p>
+            <ul class="list-disc list-inside space-y-2">
+              <li class="ml-4 leading-6">
+                Run the following command to install the required dependencies
+                using npm:
+                <pre
+                  class="bg-[#182234] border border-slate-800 rounded-xl mt-4"
+                >
+                <code class="!whitespace-pre"> 
+  npm install</code>
+              </pre>
+              </li>
+            </ul>
+
+            <p class="font-bold text-white mt-6 mb-2">
+              Run the Development Server:
+            </p>
+            <ul class="list-disc list-inside space-y-2">
+              <li class="ml-4 leading-6">
+                Once the installation of dependencies is complete, start the
+                development server by running:
+                <pre
+                  class="bg-[#182234] border border-slate-800 rounded-xl mt-4"
+                >
+                <code class="!whitespace-pre"> 
+  npm run dev</code>
+              </pre>
+              </li>
+              <li class="ml-4 leading-6">
+                This command will build and serve your Next.js application
+                locally.
+              </li>
+              <li class="ml-4 leading-6">
+                Open your web browser and navigate to http://localhost:3000 to
+                view your website.
+              </li>
+            </ul>
+            <p class="mt-8 leading-7">
+              Following these steps should get your Next.js website template up
+              and running locally, allowing you to start developing and
+              customizing it according to your requirements.
+            </p>
+          </section>
+          <!-- folder structure section start here -->
+          <section id="folder-structure" class="mt-20">
+            <p class="text-xs font-bold text-sky-500 mb-2">Project Structure</p>
+            <h2 class="font-bold text-xl text-white">Folder Structure</h2>
+            <p class="mt-6">
+              The template package you receive will contain 2 directories.
+            </p>
+            <ul class="list-disc list-inside space-y-2 mt-4">
+              <li class="ml-4">documentation</li>
+              <li class="ml-4">template</li>
+            </ul>
+            <img
+              src="./assets/directory-structure.png"
+              alt="directory structure"
+              class="max-w-[600px] w-full border-2 border-slate-800 rounded mt-4 block"
+            />
+            <p class="font-bold text-white mt-6 mb-2">Documentation:</p>
+            <p class="leading-7">
+              From Here you can learn everything about this template and
+              understand which file is responsible for what and how to customize
+              this template.
+            </p>
+            <p class="font-bold text-white mt-6 mb-2">Template:</p>
+            <p class="leading-7">
+              This is the main template which you will be use. Here is how i
+              organize my folder structure for this template.
+            </p>
+            <img
+              src="./assets/top-level-folder-structure.png"
+              alt="top level folder structure"
+              class="rounded block mt-3"
+            />
+            <!-- <p class="leading-7 mt-4">
+              Top-level folders are used to organize your application's code and
+              static assets.
+            </p> -->
+            <ul class="list-disc list-inside space-y-2 mt-4">
+              <li class="ml-4">
+                <span class="text-sky-500 font-bold">src</span> : This folder
+                contains all the projects code.
+              </li>
+              <li class="ml-4 leading-7">
+                <span class="text-sky-500 font-bold">public</span> : The files
+                placed in the "public" folder are served as static assets by
+                Next.js. These files are accessible directly by their URLs
+                relative to the root of the website. For example, if you have an
+                image named "logo.png" in the "public" folder, it would be
+                accessible at /logo.png.
+              </li>
+              <li class="ml-4">
+                <span class="text-sky-500 font-bold leading-7"
+                  >next.config.js</span
+                >
+                : Configuration file for Next.js
+              </li>
+              <li class="ml-4">
+                <span class="text-sky-500 font-bold leading-7"
+                  >package.json</span
+                >
+                : Project dependencies and scripts
+              </li>
+              <li class="ml-4">
+                <span class="text-sky-500 font-bold leading-7"
+                  >.eslintrc.json</span
+                >
+                : Configuration file for ESLint
+              </li>
+              <li class="ml-4">
+                <span class="text-sky-500 font-bold leading-7"
+                  >.gitignore
+                </span>
+                : Git files and folders to ignore
+              </li>
+              <li class="ml-4">
+                <span class="text-sky-500 font-bold leading-7"
+                  >next-env.d.ts
+                </span>
+                : TypeScript declaration file for Next.js
+              </li>
+              <li class="ml-4">
+                <span class="text-sky-500 font-bold leading-7"
+                  >tsconfig.json
+                </span>
+                : Configuration file for TypeScript
+              </li>
+              <li class="ml-4">
+                <span class="text-sky-500 font-bold leading-7"
+                  >tsconfig.json
+                </span>
+                : Configuration file for TypeScript
+              </li>
+              <li class="ml-4">
+                <span class="text-sky-500 font-bold leading-7"
+                  >tailwind.config.ts
+                </span>
+                : Configuration file for Tailwind Css
+              </li>
+              <li class="ml-4">
+                <span class="text-sky-500 font-bold leading-7"
+                  >postcss.config.js
+                </span>
+                : Configuration file for Postcss
+              </li>
+              <li class="ml-4">
+                <span class="text-sky-500 font-bold leading-7"
+                  >component.json
+                </span>
+                : Configuration file for Shadcn UI
+              </li>
+            </ul>
+            <p class="mt-8">
+              Inside the
+              <span class="font-bold text-sky-500">src</span> directory we have
+              organize our folder structure like this.
+            </p>
+            <img src="./assets/src-directory.png" alt="src directory" />
+            <ul class="list-disc list-inside space-y-2">
+              <li class="ml-4">
+                <span class="text-sky-500 font-bold leading-7">app </span>
+                : This directory contains all the routing in nextjs.
+                <img src="./assets/app-directory.png" alt="app directory" />
+              </li>
+              <li class="ml-4">
+                <span class="text-sky-500 font-bold leading-7"
+                  >components
+                </span>
+                : This will contain all the components of this template
+              </li>
+            </ul>
+          </section>
+          <!-- customization section start here -->
+          <section id="customization" class="mt-20">
+            <p class="text-xs font-bold text-sky-500 mb-2">Customization</p>
+            <h2 class="font-bold text-xl text-white">Customization Steps</h2>
+            <ul class="list-disc list-inside space-y-2">
+              <li class="ml-4">
+                <a href="#general-setting" class="font-medium text-sky-500"
+                  >General Setting</a
+                >
+              </li>
+              <li class="ml-4">
+                <a href="#header" class="font-medium text-sky-500">Header</a>
+              </li>
+              <li class="ml-4">
+                <a href="#footer" class="font-medium text-sky-500">Footer</a>
+              </li>
+              <li class="ml-4">
+                <a href="#homepage" class="font-medium text-sky-500"
+                  >Homepage Sections</a
+                >
+                <ul class="list-disc list-inside space-y-2 mt-3">
+                  <li class="ml-4">
+                    <a href="#banner" class="text-sky-500 font-medium"
+                      >Banner section</a
+                    >
+                  </li>
+                  <li class="ml-4">
+                    <a href="#introduction" class="text-sky-500 font-medium"
+                      >Introduction section</a
+                    >
+                  </li>
+                  <li class="ml-4">
+                    <a href="#chapters" class="text-sky-500 font-medium"
+                      >Chapters Sections</a
+                    >
+                  </li>
+                  <li class="ml-4">
+                    <a href="#free-chapters" class="text-sky-500 font-medium"
+                      >Free Chapters Sections</a
+                    >
+                  </li>
+                  <li class="ml-4">
+                    <a href="#reviews" class="text-sky-500 font-medium"
+                      >Review Sections</a
+                    >
+                  </li>
+                  <li class="ml-4">
+                    <a href="#pricing" class="text-sky-500 font-medium"
+                      >Pricing Sections</a
+                    >
+                  </li>
+                  <li class="ml-4">
+                    <a href="#author" class="text-sky-500 font-medium"
+                      >Author Section</a
+                    >
+                  </li>
+                  <li class="ml-4">
+                    <a href="#contact" class="text-sky-500 font-medium"
+                      >Contact Section</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <!-- general setting section start here -->
+            <section id="general-setting">
+              <h3 class="text-white font-bold text-lg mt-8">General Setting</h3>
+              <p class="font-semibold text-slate-200 mt-4">
+                How to update meta data?
+              </p>
+              <p class="mt-2 leading-7">
+                To update site metadata, you have to navigate
+                <span class="font-bold text-sky-500"
+                  >src > config > site.ts</span
+                >
+                . And there you will find those lines of code.
+              </p>
+              <pre
+                class="bg-[#182234] border border-slate-800 rounded-xl mt-4 overflow-x-auto"
+              >
+              <code>
+  const siteURL = "https://e-book-template.vercel.app";
+  export const siteConfig = {
+    name: "Unlock Your Potential: A Guide to Personal Growth",
+    url: siteURL,
+    ogImage: `${siteURL}/open-graph.png`,
+    description:
+      "Unlock Your Potential is a comprehensive guide to personal growth",
+    keywords: [
+      "personal growth",
+      "self-improvement",
+      "self-discovery",
+      "empowerment",
+      "goal setting",
+      "mindset",
+      "resilience",
+      "confidence building",
+      "positive thinking",
+      "life transformation",
+      "self-help",
+      "motivation",
+      "success strategies",
+      "self-awareness",
+      "overcoming obstacles",
+    ],
+    authors: [
+      {
+        name: "Rakib",
+        url: "https://rakib-seven.vercel.app/",
+      },
+    ],
+    creator: "Rakib",
+  };
+
+  export type SiteConfig = typeof siteConfig;</code>
+            </pre>
+              <p class="mt-6">From here you can change the site metadata.</p>
+
+              <p class="font-semibold text-slate-200 mt-6">
+                How to update site open-graph image?
+              </p>
+              <p class="mt-2 leading-7">
+                To update site open-graph image, you have to navigate
+                <span class="font-bold text-sky-500"
+                  >public > open-graph.png</span
+                >
+                . Here you can put you open-graph image on here and the
+                open-graph image name must have to be
+                <span class="font-bold text-sky-500">open-graph</span>
+              </p>
+              <p class="font-semibold text-slate-200 mt-6">
+                How to update site favicon of this template?
+              </p>
+              <p class="mt-2 leading-7">
+                To update favicon, you have to navigate
+                <span class="font-bold text-sky-500"
+                  >src > app > favicon.ico</span
+                >
+                . Here you can put you favicon on here and the favicon name must
+                have to be
+                <span class="font-bold text-sky-500">favicon.ico</span>
+              </p>
+              <p class="font-semibold text-slate-200 mt-6">
+                How to update primary color of this template?
+              </p>
+              <p class="mt-2 leading-7">
+                To update primary color of this template, you have to navigate
+                <span class="font-bold text-sky-500"
+                  >src > app > global.css</span
+                >
+                . Here you modify the colors of this projects.
+              </p>
+              <pre
+                class="bg-[#182234] border border-slate-800 rounded-xl mt-4 overflow-x-auto"
+              >
+              <code>
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 221.21 83.19% 53.33%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.21 83.19% 53.33%;
+
+    --radius: 0.5rem;
+  }</code>
+            </pre>
+              <p class="mt-6">
+                Colors must have to be in
+                <span class="text-sky-500 font-bold">hsl</span> format and there
+                will be no comma ( , )
+              </p>
+            </section>
+            <!-- header section start here -->
+            <section id="header">
+              <h3 class="text-white font-bold text-lg mt-8">Header</h3>
+              <h4 class="font-semibold text-slate-200 mt-4">
+                How to update navbar?
+              </h4>
+              <p class="mt-2">
+                To update navigation bar of this template you have to navigate
+                to
+                <span class="font-semibold text-sky-500"
+                  >src > app > components > navbar.tsx</span
+                >
+                . From here you can customize the navbar.
+              </p>
+              <h4 class="font-semibold text-slate-200 mt-4">
+                How to update navbar logo?
+              </h4>
+              <p class="mt-2">
+                To update navigation bar logo, you have to navigate to
+                <span class="text-sky-500 font-bold">public</span> folder. Here
+                you have to put your logo file which name have to be
+                <span class="font-semibold text-sky-500">logo</span> . If your
+                logo extension is
+                <span class="font-semibold text-sky-500">.svg</span>, then you
+                don't have to update any code on the
+                <span class="font-semibold text-sky-500">navbar.tsx</span> file.
+                But if your extension is not .svg, then you have to modify file
+                extension on here.
+              </p>
+              <img
+                src="./assets/logo-change.png"
+                alt="logo change instructions"
+              />
+              <p class="leading-7 mt-4">
+                If you want to update the chapters content, you have to navigate
+                to
+                <span class="font-semibold text-sky-500"
+                  >src > lib > data > navigation-data.ts
+                </span>
+              </p>
+              <pre
+                class="bg-[#182234] border border-slate-800 rounded-xl mt-4 overflow-x-auto"
+              >
+                <code>
+  export const chapters = [
+    {
+      id: 1,
+      label: "Chapters",
+      href: "#chapters",
+    },
+  ]</code>
+              </pre>
+              <p class="mt-3">
+                Here you can add you own navigation by using this format.
+              </p>
+              <p>
+                <span class="font-bold">Note:</span> If you update any
+                <span class="font-semibold text-sky-500">href</span> of any
+                existing navigation links, then you have to update the id of the
+                specific sections which href you updated.
+              </p>
+            </section>
+            <!-- footer section start here -->
+            <section id="footer">
+              <h3 class="text-white font-bold text-lg mt-8">Footer</h3>
+              <h4 class="font-semibold text-slate-200 mt-4">
+                How to update footer?
+              </h4>
+              <p class="mt-2">
+                To update footer of this template you have to navigate to
+                <span class="font-semibold text-sky-500"
+                  >src > app > components > footer.tsx</span
+                >
+                . From here you can customize the footer.
+              </p>
+            </section>
+            <!-- homepage section start here -->
+            <section id="banner">
+              <h3 class="text-white font-bold text-lg mt-8">Hero Section</h3>
+              <h4 class="font-semibold text-slate-200 mt-4">
+                How to update Hero section?
+              </h4>
+              <p class="mt-2">
+                To update hero section of this template you have to navigate to
+                <span class="font-semibold text-sky-500"
+                  >src > app > components > banner.tsx</span
+                >
+                . From here you can customize the hero section.
+              </p>
+              <h4 class="font-semibold text-slate-200 mt-4">
+                How to update Hero section images?
+              </h4>
+              <p class="mt-2 leading-7">
+                To update hero section images of this template you have to
+                navigate to
+                <span class="font-semibold text-sky-500">src > images</span>
+                . And here you can store your cover images. Image name must have
+                to be same. If you use the same extension of images, then you
+                don't have to change any file on banner.tsx for changing banner
+                images. But if you use different extensions of images then you
+                have modify the image source.
+              </p>
+              <img
+                src="./assets/hero-image-change.png"
+                alt="hero image change instruction"
+              />
+              <h3 class="text-white font-bold text-lg mt-12" id="introduction">
+                Introduction Section
+              </h3>
+              <p class="leading-7">
+                For update the introduction section, you have to navigate to
+                <span class="font-semibold text-sky-500"
+                  >src > components > introduction.tsx
+                </span>
+                file. From here you can modify introduction section.
+              </p>
+              <h3 class="text-white font-bold text-lg mt-12" id="chapters">
+                Chapters Section
+              </h3>
+              <p class="leading-7">
+                For update the chapters section, you have to navigate to
+                <span class="font-semibold text-sky-500"
+                  >src > components > chapters.tsx
+                </span>
+                file. From here you can modify chapters section.
+              </p>
+              <p class="leading-7">
+                If you want to update the chapters content, you have to navigate
+                to
+                <span class="font-semibold text-sky-500"
+                  >src > lib > data > chapters-data.ts
+                </span>
+              </p>
+              <pre
+                class="bg-[#182234] border border-slate-800 rounded-xl mt-4 overflow-x-auto"
+              >
+                <code>
+  export const chapters = [
+    {
+      id: 1,
+      title: "chapters title",
+      subtitle: "chapters subtitle",
+    }
+  ]</code>
+              </pre>
+              <p class="mt-3">
+                Here you can add you own chapter by using this format.
+              </p>
+              <h3 class="text-white font-bold text-lg mt-12" id="free-chapters">
+                Free Chapters Section
+              </h3>
+              <p class="leading-7">
+                For update the free chapters section, you have to navigate to
+                <span class="font-semibold text-sky-500"
+                  >src > components > free-chapters.tsx
+                </span>
+                file. From here you can modify free chapters section.
+              </p>
+              <h3 class="text-white font-bold text-lg mt-12" id="reviews">
+                Reviews Section
+              </h3>
+              <p class="leading-7">
+                For update the review section, you have to navigate to
+                <span class="font-semibold text-sky-500"
+                  >src > components > testimonials.tsx
+                </span>
+                file. From here you can modify testimonials section.
+              </p>
+              <p class="leading-7">
+                If you want to update the testimonials content, you have to
+                navigate to
+                <span class="font-semibold text-sky-500"
+                  >src > lib > data > testimonials-data.ts
+                </span>
+              </p>
+              <pre
+                class="bg-[#182234] border border-slate-800 rounded-xl mt-4 overflow-x-auto"
+              >
+                <code>
+  export const testimonials = [
+  {
+    id: 1,
+    name: "reviewer name",
+    image: "",
+    rating: 5,
+    role: "Reviewer role",
+    content: "Review content",
+  },
+  ]</code>
+              </pre>
+              <p class="mt-3">
+                Here you can add you own testimonials by using this format.
+              </p>
+              <!-- pricing section start here -->
+              <h3 class="text-white font-bold text-lg mt-12" id="pricing">
+                Pricing Section
+              </h3>
+              <p class="leading-7">
+                For update the pricing section, you have to navigate to
+                <span class="font-semibold text-sky-500"
+                  >src > components > pricing.tsx
+                </span>
+                file. From here you can modify pricing section.
+              </p>
+              <p class="leading-7">
+                If you want to update the pricing content, you have to navigate
+                to
+                <span class="font-semibold text-sky-500"
+                  >src > lib > data > pricing-data.ts
+                </span>
+              </p>
+              <pre
+                class="bg-[#182234] border border-slate-800 rounded-xl mt-4 overflow-x-auto"
+              >
+                <code>
+  export const pricingOptions = [
+    {
+      type: "PDF",
+      price: 19.99,
+      description:
+        "Instantly download the digital PDF version of Unlock Your Potential and start your personal growth journey today.",
+      benefits: [
+        "Instant access upon purchase",
+        "Read on any device",
+        "Portable format for on-the-go learning",
+        "Searchable text for easy reference",
+        "Environmentally friendly - no paper waste",
+      ],
+    },
+    {
+      type: "Hard Copy",
+      price: 29.99,
+      description:
+        "Order a physical copy of Unlock Your Potential and receive a beautifully printed book delivered to your doorstep.",
+      benefits: [
+        "High-quality printed book with durable cover",
+        "Enhanced reading experience with physical pages",
+        "Perfect for highlighting and annotating",
+        "Decorative addition to your bookshelf",
+        "Ideal for sharing with friends and family",
+      ],
+    },
+  ];</code>
+              </pre>
+              <p class="mt-3">
+                Here you can modify you own pricing data by using this format.
+              </p>
+              <!-- author section start here -->
+              <h3 class="text-white font-bold text-lg mt-12" id="author">
+                Author Section
+              </h3>
+              <p class="leading-7">
+                For update the author section, you have to navigate to
+                <span class="font-semibold text-sky-500"
+                  >src > components > author.tsx
+                </span>
+                file. From here you can modify author section.
+              </p>
+              <p class="leading-7">
+                If you want to update the author content, you have to navigate
+                to
+                <span class="font-semibold text-sky-500"
+                  >src > lib > data > author-data.ts
+                </span>
+              </p>
+              <pre
+                class="bg-[#182234] border border-slate-800 rounded-xl mt-4 overflow-x-auto"
+              >
+                <code>
+  export const authorData = {
+    name: "Ema Smith",
+    bookName: "Unlock Your Potential",
+    bio: `Emma Smith is a seasoned life coach and motivational speaker dedicated to helping individuals unlock their full potential and achieve personal growth. With a background in psychology and years of experience working with clients from all walks of life, Emma offers practical strategies, actionable advice, and inspiring insights to empower readers on their journey of self-discovery. Her passion for personal growth and commitment to helping others live fulfilling lives shine through in every page of "Unlock Your Potential."`,
+    facebookUrl: "",
+    linkedinUrl: "",
+    twitterUrl: "",
+  };</code>
+              </pre>
+              <p class="mt-3">
+                Here you can modify author data by using this format.
+              </p>
+              <p class="mt-2">
+                If you want to update the author image, then you have to
+                <span class="font-semibold text-sky-500">src > images </span> .
+                Here you can save your own image of the author by using this
+                name <span class="font-semibold text-sky-500">(author)</span> .
+                If the extension name is same then you don't have to change any
+                code in the author.tsx file. But if the image extension is
+                different then you have to change image extension in the image
+                src attribute.
+              </p>
+              <!-- contact section start here -->
+              <h3 class="text-white font-bold text-lg mt-12" id="contact">
+                Contact Section
+              </h3>
+              <p class="leading-7">
+                For update the contact section, you have to navigate to
+                <span class="font-semibold text-sky-500"
+                  >src > components > contact.tsx
+                </span>
+                file. From here you can modify contact section.
+              </p>
+            </section>
+          </section>
+          <!-- Licensed and credits section start here -->
+          <section id="license-and-credits" class="mt-20">
+            <p class="text-xs font-bold text-sky-500 mb-2">Licensed</p>
+            <h2 class="font-bold text-xl text-white">Licensed and Credits</h2>
+            <p class="mt-3">
+              I've used the following images, icons or other files as listed.
+            </p>
+            <ul class="mt-5 list-disc list-inside space-y-2">
+              <li class="ml-4">
+                author.jpg from
+                <a
+                  href="https://unsplash.com/"
+                  target="_blank"
+                  class="text-sky-500"
+                  >Unsplash</a
+                >
+                Under free License
+              </li>
+              <li class="ml-4">
+                <a
+                  href="https://nextjs.org/"
+                  target="_blank"
+                  class="text-sky-500"
+                  >Nextjs</a
+                >
+              </li>
+              <li class="ml-4">
+                <a
+                  href="https://tailwindcss.com/"
+                  target="_blank"
+                  class="text-sky-500"
+                  >Tailwindcss</a
+                >
+              </li>
+              <li class="ml-4">
+                <a href="" target="_blank" class="text-sky-500"
+                  >https://ui.shadcn.com/</a
+                >
+              </li>
+            </ul>
+          </section>
+          <!-- conclusion section start here -->
+          <section id="conclution" class="mt-20">
+            <p class="text-xs font-bold text-sky-500 mb-2">Conclusion</p>
+            <h2 class="font-bold text-xl text-white">Conclusion</h2>
+            <p class="mt-6 leading-7">
+              Once again, thank you so much for purchasing this template. As I
+              said at the beginning, I'd be glad to help you if you have any
+              questions relating to this template. No guarantees, but I'll do my
+              best to assist. If you have a more general question relating to
+              the templates on ThemeForest, you might consider visiting the
+              forums and asking your question in the "Item Discussion" section.
+            </p>
+            <h5 class="font-bold text-xl text-white mt-5">Rakib</h5>
+            <p>Fullstack Javascript Developer.</p>
+            <p>md.rakib10122003@gmail.com</p>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
